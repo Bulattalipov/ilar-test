@@ -1,0 +1,14 @@
+.button {
+  padding: 11px 30px 10px 30px;
+  border-radius: 5px;
+  background: #8185C8;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 90.4%;
+  color: var(--white-color);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #5e64d4;
+  }
+}

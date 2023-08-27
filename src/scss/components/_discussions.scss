@@ -1,0 +1,149 @@
+.discussions {
+  &__wrapper {
+    padding: 0 186px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 90.4%;
+    color: var(--accent-color);
+    margin-bottom: 4rem;
+  }
+
+  &__desc {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+
+  &__form {
+    border-radius: 10px;
+    border: 1px solid rgba(22, 41, 63, 0.4);
+    padding: 16px 16px 16px 12px;
+
+    .user {
+      margin-bottom: 16px;
+      font-size: 16px;
+      @include flex-v-center;
+    }
+
+    .user__img-wrapper {
+      width: 30px;
+      height: 30px;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 20px;
+      resize: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  &__box-file {
+    @include flex-v-center;
+    cursor: pointer;
+
+    svg {
+      stroke: var(--basic-color);
+      fill: none;
+    }
+  }
+
+  &__box-btn {
+    margin-left: 16px;
+  }
+
+  &__comments {
+    margin-top: 4rem;
+  }
+
+  &__comment {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 36px;
+    }
+
+    &--l-2 {
+      margin-left: 52px;
+    }
+  }
+
+  &__comment-img {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__comment-top {
+    @include flex-v-center;
+    margin-bottom: 16px;
+  }
+
+  &__comment-title {
+    font-weight: 700;
+  }
+
+  &__comment-time {
+    margin-left: 40px;
+    font-size: 14px;
+    opacity: 0.4;
+  }
+
+  &__comment-content {
+    margin-bottom: 16px;
+
+    img {
+      width: 131px;
+      height: 131px;
+      object-fit: cover;
+    }
+  }
+
+  &__comment-interactive {
+    @include flex-v-center;
+  }
+
+  &__comment-interactive-answer {
+    opacity: 0.8;
+  }
+
+  &__comment-interactive-rating {
+    @include flex-v-center;
+    margin-left: 32px;
+  }
+
+  &__comment-interactive-rating-btn {
+    svg {
+      stroke: var(--basic-color);
+      fill: none;
+    }
+  }
+
+  &__comment-interactive-rating-counter {
+    margin: 0 12px;
+  }
+}

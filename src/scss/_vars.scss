@@ -1,0 +1,24 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Inter", sans-serif;
+  --font-second: "NotoSerif", serif;
+  --content-width: 1280px;
+  --container-offset: 128px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --light-color: #fff;
+  --accent-color: #0E0865;
+  --basic-color: #16293F;
+  --blue-1-color: #293389;
+  --white-color: #fff;
+}
+
+// @include tablet {
+//   :root {
+//     // base
+//     --container-offset: 64px;
+//   }
+// }

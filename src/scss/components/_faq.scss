@@ -1,0 +1,56 @@
+.faq {
+  margin-bottom: 94px;
+
+  &__list-item {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background: #D8EAFC;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.active {
+      .faq__list-item-icon {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__list-item-box {
+    @include flex-all-sb;
+    width: 100%;
+    padding: 20px 151px;
+    cursor: pointer;
+  }
+
+  &__list-item-title {
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  &__list-item-icon {
+    svg {
+      transition: transform 0.3s;
+      stroke: var(--basic-color);
+      fill: transparent;
+    }
+  }
+
+  &__list-item-content {
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__list-item-content-inner {
+    padding: 20px 151px;
+
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+}
