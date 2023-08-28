@@ -6,7 +6,7 @@
   --font-second: "NotoSerif", serif;
   --content-width: 1280px;
   --container-offset: 128px;
-  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+  // --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
@@ -15,10 +15,3 @@
   --blue-1-color: #293389;
   --white-color: #fff;
 }
-
-// @include tablet {
-//   :root {
-//     // base
-//     --container-offset: 64px;
-//   }
-// }

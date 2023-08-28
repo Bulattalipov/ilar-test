@@ -84,14 +84,38 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 128px;
+  max-width: var(--content-width);
+
+  @media (max-width: 1279px) {
+    padding: 0 70px;
+  }
+
+  @include tablet {
+    padding: 0 40px;
+  }
+
+  @include small-tablet {
+    padding: 0 20px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
+  }
 }
 
 .container-2 {
   margin: 0 auto;
   padding: 0 40px;
-  max-width: var(--container-width);
+  max-width: var(--content-width);
+
+  @include small-tablet {
+    padding: 0 20px;
+  }
+
+  @include mobile {
+    padding: 0 16px;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

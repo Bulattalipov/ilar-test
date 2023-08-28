@@ -1,10 +1,29 @@
 .intro {
   margin-bottom: 77px;
 
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 40px;
+    margin-top: 70px;
     margin-bottom: 32px;
+
+    @include tablet {
+      font-size: 35px;
+      margin-top: 50px;
+    }
+
+    @include small-tablet {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 25px;
+    }
   }
 
   &__desc {
@@ -12,6 +31,15 @@
     font-size: 22px;
     font-weight: 500;
     margin-bottom: 32px;
+
+    @include small-tablet {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   .user {
@@ -19,5 +47,13 @@
     max-width: 500px;
     margin-bottom: 32px;
     margin-left: auto;
+
+    @include tablet {
+      margin-left: 0;
+    }
+
+    @include small-tablet {
+      margin-bottom: 20px;
+    }
   }
 }

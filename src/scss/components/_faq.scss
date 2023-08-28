@@ -1,6 +1,14 @@
 .faq {
   margin-bottom: 94px;
 
+  @include tablet {
+    margin-bottom: 70px;
+  }
+
+  @include small-tablet {
+    margin-bottom: 50px;
+  }
+
   &__list-item {
     margin-bottom: 15px;
     border-radius: 10px;
@@ -24,18 +32,44 @@
     width: 100%;
     padding: 20px 151px;
     cursor: pointer;
+
+    @media (max-width: 1279px) {
+      padding: 20px 90px;
+    }
+
+    @include tablet {
+      padding: 20px 40px;
+    }
+
+    @include small-tablet {
+      padding: 16px 20px;
+    }
   }
 
   &__list-item-title {
     font-weight: 500;
     font-size: 22px;
+    text-align: start;
+    margin-right: 1rem;
+
+    @include small-tablet {
+      font-size: 20px;
+    }
   }
 
   &__list-item-icon {
     svg {
+      width: 45px;
+      height: 45px;
       transition: transform 0.3s;
       stroke: var(--basic-color);
       fill: transparent;
+      background-size: contain;
+
+      @include small-tablet {
+        width: 40px;
+        height: 40px;
+      }
     }
   }
 
@@ -46,6 +80,18 @@
 
   &__list-item-content-inner {
     padding: 20px 151px;
+
+    @media (max-width: 1279px) {
+      padding: 20px 90px;
+    }
+
+    @include tablet {
+      padding: 20px 40px;
+    }
+
+    @include small-tablet {
+      padding: 16px 20px;
+    }
 
     p {
       &:first-child {
